@@ -13,7 +13,7 @@ body {
     cursor: pointer;
     border-radius: 8px;
     transition: 250ms;
-    width: 100px;
+    width: auto;
     height: 20px;
     text-align: center;
     margin-left: 5%;
