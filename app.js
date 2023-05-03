@@ -29,3 +29,18 @@ function fetchMemes() {
             document.body.appendChild(parentdiv)
         });
 }
+
+
+// Array of favicon filenames
+var favicons = ['meme_cat_being_yelled_at.png', 'meme_crying_cat.png', 'meme_crying_kim_kardashian.png','meme_crying_michael_jordan.png','meme_facepalm.png','meme_hide_the_pain_harold.png','meme_leonardo_dicaprio_laughing.png','meme_polite_cat.png','meme_roll_safe.png','meme_salt_bae.png','meme_woman_yelling.png'];
+
+// Get a random favicon filename
+var randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
+
+// Create a link element for the favicon
+var link = document.createElement('link');
+link.rel = 'shortcut icon';
+link.href = 'favicons/' + randomFavicon;
+
+// Add the link element to the head section of the page
+document.getElementsByTagName('head')[0].appendChild(link);
