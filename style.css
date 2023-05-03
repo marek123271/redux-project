@@ -62,3 +62,24 @@ img:hover {
     border-radius: 0px;
     transform:  scale(1.2);
 }
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+      grid-template-rows: 15% 85%;
+    }
+    
+    #memeBtn {
+      font-size: 14px;
+      height: 30px;
+    }
+    
+    #memes div {
+      width: 45%;
+    }
+  }
+  /* Media queries for even smaller screens */
+@media only screen and (max-width: 480px) {
+    #memes div {
+      width: 80%;
+    }
+  }
