@@ -83,6 +83,7 @@ img:hover {
 @media only screen and (max-width: 480px) {
     #memes div {
         width: 90%;
+        height: 100%;
     }
     
     #memeBtn {
