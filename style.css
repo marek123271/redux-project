@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-rows: 10% 90%;
     overflow: hidden;
@@ -14,7 +14,7 @@ body {
     border-radius: 8px;
     transition: 250ms;
     width: auto;
-    height: 20px;
+    height: 30px;
     text-align: center;
     
     background: rgb(248, 173, 185);
@@ -40,7 +40,7 @@ body {
     padding: 5px;
     border-radius: 8px;
     height: auto;
-    width: 250px;
+    width: 90%;
 }
 
 #memes div h4 {
@@ -52,8 +52,8 @@ body {
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    height: auto;
     border-radius:  12px;
     transition: 250ms;
 }
@@ -62,24 +62,31 @@ img:hover {
     border-radius: 0px;
     transform:  scale(1.2);
 }
+
 /* Media queries for smaller screens */
 @media only screen and (max-width: 768px) {
     body {
-      grid-template-rows: 15% 85%;
+        grid-template-rows: 15% 85%;
+    }
+    
+    #memes div {
+        width: 90%;
     }
     
     #memeBtn {
-      font-size: 14px;
-      height: 30px;
+        font-size: 14px;
+        height: 40px;
     }
-    
-    #memes div {
-      width: 45%;
-    }
-  }
-  /* Media queries for even smaller screens */
+}
+
+/* Media queries for even smaller screens */
 @media only screen and (max-width: 480px) {
     #memes div {
-      width: 80%;
+        width: 90%;
     }
-  }
+    
+    #memeBtn {
+        font-size: 14px;
+        height: 50px;
+    }
+}
