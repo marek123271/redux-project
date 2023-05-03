@@ -1,6 +1,6 @@
 body {
-    width: 180vw;
-    height: 180vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: 10% 90%;
     overflow: hidden;
